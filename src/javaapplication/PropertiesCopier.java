@@ -106,7 +106,9 @@ public class PropertiesCopier {
     public static void main(String ...args) throws IllegalAccessException, InvocationTargetException {
             Address address = new Address("vista bella", "simi valley", "ca");
         Person p1 = new Person("John", null, address);
-        Person p2 = new Person(null, "Snow", null);
+        Person p2 = new 
+        
+        Person(null, "Snow", null);
         Person merged = (Person) copyProperties(p1, p2);
         System.out.println("merged person:" + merged);
     }
